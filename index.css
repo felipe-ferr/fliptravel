@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgb(18, 18, 18) 0%, rgba(33,33,33,0) 62%), url("imagem/fundoheader.jpg");
+    background-size: cover;
+    padding:50px;
+}
+.navcontainer{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid red;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+.logoempresa{
+    display: flex;
+    justify-content: flex-start;
+    color:white;
+    width:30%;
+}
+.navlinks{
+    display: flex;
+    width:100%;
+    color:white;
+    justify-content: space-around;
+}
+.navlinks a:hover{
+    color:red;
+    cursor:pointer
+}
+
+
+
+
+.headertitulo{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.headertitulo h1{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-size:120px;
+    margin:0;
+}
+.headertitulo p{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-size:18px;
+    width:50%;
+}
+
+.headerlinks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+.headerlinkcontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.101);
+    width: 100%;
+    justify-content: center;
+    align-items: space-around;
+    padding: 15px;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    box-shadow: inset 0px -3px 0px 0px rgb(59, 33, 33);
+    
+}
+.headerlinkcontainer:hover{
+    box-shadow: inset 0px -3px 0px 0px red;
+    background-color: rgba(0, 0, 0, 0.250);
+
+}
+.linktexto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap:20px;
+  
+}
+.linktexto ion-icon{
+    color:red;
+    font-size:34px;
+}
+.linktexto p{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color:white;
+    font-size:18px;
+    width:60%;
+
+}
+.vejamais{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color:white;
+    font-size:18px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-right:105px;
+}
+
+
