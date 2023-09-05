@@ -232,9 +232,11 @@ html{
 
 .anchorright{
    float:right;
+   text-align: center;
 }
 .anchorleft{
     float:left;
+    text-align: center;
 }
 
 
