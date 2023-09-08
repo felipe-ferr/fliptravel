@@ -10,7 +10,15 @@
     </head>
 
     <body>
+        <div id="navscroll" class="fixednav">
+            <a>Home</a>
+            <a>Sobre Nós</a>
+            <a>Reviews</a>
+            <a>Tours</a>
+        </div>
         <div class="header">
+
+            
 
             <div class="navcontainer">
 
@@ -79,28 +87,59 @@
 
         <div class="tourscontainer">
 
-            <a class="botoescontrolleft" href="#comeco"><ion-icon name="chevron-back-outline"></ion-icon></a>
+            <a class="botoescontrolleft"onclick="esquerda()"><ion-icon name="chevron-back-outline"></ion-icon></a>
 
-        
 
 
             <div class="tours">
-                <span class="anchorleft"id="comeco"></span>
+                <span id="start"></span>
                 <a style="background-image:url('imagem/paris.jpg');"><p>Paris</p></a>
                 <a style="background-image:url('imagem/dubai.jpg');"><p>Dubai</p></a>
                 <a style="background-image:url('imagem/cairo.jpg');"><p>Cairo</p></a>
                 <a style="background-image:url('imagem/buenos.jpg');"><p>Buenos Aires</p></a>
                 <a style="background-image:url('imagem/brasilia.jpg');"><p>Brasília</p></a>
-                <a style="background-image:url('imagem/lisboa.jpg');"><p>Lisboa</p></a>
-                <span class="anchorright"id="final"></span>
+                <a id="final" style="background-image:url('imagem/lisboa.jpg');"><p>Lisboa</p></a>
             </div>
 
-            <a class="botoescontrolright" href="#final"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+            <a class="botoescontrolright"onclick="scrollRight()"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+
+         </div>
+
+        
+
+            
+
+    
+
+    <script>
+      function scrollRight() {
+        const element = document.getElementById("final");
+        element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+      }
+
+      function esquerda() {
+        const element = document.getElementById("start");
+        element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+      }
+      window.onscroll = function() {navScrollDown()};
 
 
 
 
-        </div>
+
+      function navScrollDown(){
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById('navscroll').style.top = "0";
+        }
+        else {
+            document.getElementById('navscroll').style.top = "-50px";
+        }
+      }
+
+
+    </script>
+
+   
 
             
 

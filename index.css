@@ -173,6 +173,7 @@ html{
     font-size: 25px;
     box-shadow: inset 0px -3px 0px 0px rgb(59, 33, 33);
     transition-duration: 0.3s;
+    margin: 0;
 }
 .tours a{
     background-position: center;
@@ -203,8 +204,10 @@ html{
     display: flex;
     align-items: center;
     transition-duration: 0.3s;
+    background-color: inherit;
+    border: none;
 }
-.botoescontrolleft:hover{
+.botoescontrolleft:hover ion-icon{
     transform: scale(1.1);
 }
 .botoescontrolright{
@@ -215,28 +218,38 @@ html{
     align-items: center;
     padding: 0px 15px;
     transition-duration: 0.3s;
+    background-color: inherit;
+    border: none;
 }
-.botoescontrolright:hover{
+.botoescontrolright:hover ion-icon{
     transform: scale(1.1);
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .tours::-webkit-scrollbar {
     display: none;
-  }
+}
   
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .tours {
+/* Hide scrollbar for IE, Edge and Firefox */
+.tours {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-  }
-
-.anchorright{
-   float:right;
-   text-align: center;
 }
-.anchorleft{
-    float:left;
-    text-align: center;
+
+.fixednav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(208, 47, 47);
+    top:-50px;
+    position: fixed;
+    transition: top 0.5s;
+    height: 50px;
+}
+.fixednav a{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-size:16px;
 }
 
 
