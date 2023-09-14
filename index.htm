@@ -105,6 +105,47 @@
 
          </div>
 
+       <div class="container-geral">
+        <div class="containervertical">
+
+            <div class="filtros">
+                <button onclick="showhotels()">Hotéis</button>
+                <button>Pacotes</button>
+                <button>Passagens</button>
+                <button onclick="showcar()">Carros</button>
+            </div>
+
+            <div id="wrapper"class="desc">
+
+
+                <div style="display:none" id="myDIV">
+                    CARRO.
+                  </div>
+
+                <div id="myDIV2">
+                    HOTEL.
+                  </div>
+
+
+                </div>
+
+                
+
+
+    
+ 
+
+
+        </div>
+       </div>
+
+          
+
+  
+
+     
+
+            
         
 
             
@@ -128,13 +169,28 @@
 
 
       function navScrollDown(){
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
             document.getElementById('navscroll').style.top = "0";
         }
         else {
             document.getElementById('navscroll').style.top = "-50px";
         }
       }
+
+
+      function showcar(){
+        var x = document.getElementById("myDIV");
+        var y = document.getElementById("myDIV2");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+        } else {
+            x.style.display = "none";
+  }
+      }
+ 
+
+       
 
 
     </script>
