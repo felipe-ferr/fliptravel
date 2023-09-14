@@ -109,7 +109,7 @@
         <div class="containervertical">
 
             <div class="filtros">
-                <button onclick="showhotels()">Hotéis</button>
+                <button onclick="showhotel()">Hotéis</button>
                 <button>Pacotes</button>
                 <button>Passagens</button>
                 <button onclick="showcar()">Carros</button>
@@ -118,15 +118,13 @@
             <div id="wrapper"class="desc">
 
 
-                <div style="display:none" id="myDIV">
-                    CARRO.
-                  </div>
-
-                <div id="myDIV2">
-                    HOTEL.
-                  </div>
-
-
+             <div id="myDIV"class="descHotel">
+			Hotel
+			</div>
+			
+			 <div id="myDIV2"class="descCarro">
+			 Carro
+			 </div>
                 </div>
 
                 
@@ -181,11 +179,24 @@
       function showcar(){
         var x = document.getElementById("myDIV");
         var y = document.getElementById("myDIV2");
+        if (y.style.display === "none") {
+            y.style.display = "flex";
+            x.style.display = "none";
+        } else {
+            y.style.display = "flex";
+			x.style.display = "none";
+  }
+      }
+	  
+	  function showhotel(){
+        var x = document.getElementById("myDIV");
+        var y = document.getElementById("myDIV2");
         if (x.style.display === "none") {
-            x.style.display = "block";
+            x.style.display = "flex";
             y.style.display = "none";
         } else {
-            x.style.display = "none";
+            x.style.display = "flex";
+			y.style.display = "none";
   }
       }
  

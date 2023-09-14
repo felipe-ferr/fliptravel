@@ -336,11 +336,18 @@ html{
     width: 70%;
     height: 200px;
 }
-.hoteldesc{
+.descHotel{
     display: flex;
     width: 70%;
-    background-color: rgb(143, 33, 33);
+    background-color: white;
     height: 200px;
+}
+.descCarro{
+    display: flex;
+    width: 70%;
+    background-color: red;
+    height: 200px;
+	display:none;
 }
 .carroscontainer{
     display: flex;
